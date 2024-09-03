@@ -1,0 +1,26 @@
+<div class="paragraph paragraph--type--store-locator paragraph--view-mode--default container search_form-container">
+    <div class="search_form">
+        <form class="mfcvl-config-store-locator-search-form" data-drupal-selector="mfcvl-config-store-locator-search-form" action="/" method="post" id="mfcvl-config-store-locator-search-form" accept-charset="UTF-8">
+            <div class="form-type-filter js-form-item form-item form-type-textfield js-form-type-textfield form-item-search js-form-item-search form-no-label">
+                <label for="edit-search" class="visually-hidden">Search</label> <!--- ici c'est la partie search où l'internaute saisi sa recherche, elle doit se référer à des mots clés dans le site internet -->
+                <input placeholder="Trouvez un établissement, indiquez votre ville" onkeypress="if(event.keyCode==13){this.form.submit();}" data-twig-suggestion="fpb_appointment_search" data-drupal-selector="edit-search" type="text" id="edit-search" name="search" value="" size="60" maxlength="128" class="form-text" />
+            </div>
+            <div class="custom-selectpicker_1 custom-selectpicker js-form-item form-item form-type-select js-form-type-select form-item-searchbytype js-form-item-searchbytype form-no-label">
+                <label for="edit-searchbytype" class="visually-hidden">Filter</label> <!-- Ici c'est le filtre, je sélectionne dans le paramètre la catégorie PARENT -->
+                <select style="margin-left: 0.1em;" data-drupal-selector="edit-searchbytype" id="edit-searchbytype" name="searchByType" class="form-select selectpicker">
+                    <!-- Il me retourne dans le menu déroulant et en proposition de choisir les catégories ENFANT de la catégorie PARENT-->
+                    <option value="" selected="selected">Type de structure</option><option value="9">Accompagnement à domicile</option>
+                    <option value="3">Administratif - Support - Recherche</option><option value="5">Enfance et Famille</option>
+                    <option value="8">Personnes Agées</option><option value="4">Personnes en situation de handicap</option>
+                    <option value="10">Pharmacie</option><option value="2">Santé auditive</option><option value="6">Santé dentaire</option>
+                    <option value="7">Santé visuelle</option><option value="25">Soins Médicaux et de Réadaptation</option>
+                </select>
+            </div>
+            <input autocomplete="off" data-drupal-selector="form-e0kqtjjrmqxhorgmw6mjlmeshgork7jybeg21h-hepm" type="hidden" name="form_build_id" value="form-e0kqTjJrmqXhOrGMW6mjlmESHgoRk7JYbeg21h_HePM" />
+            <input data-drupal-selector="edit-mfcvl-config-store-locator-search-form" type="hidden" name="form_id" value="mfcvl_config_store_locator_search_form" />
+            <div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+                <input class="cta violet button js-form-submit form-submit" data-event="HomepageInteraction" data-category="Rechercher_Un_Centre" data-label="" data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Rechercher" />
+            </div>
+        </form>
+    </div>
+</div>

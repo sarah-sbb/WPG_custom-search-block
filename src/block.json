@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/custom-search-block",
+	"version": "0.1.0",
+	"title": "Custom Search Block",
+	"category": "widgets",
+	"icon": "search",
+	"description": "Un bloc de recherche avancée.",
+	"example": {},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "custom-search-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"viewScript": "file:./view.js",
+	"attributes": {
+        "searchPlaceholder": {
+            "type": "string",
+            "default": "Trouvez un établissement, indiquez votre ville"
+        },
+        "searchValue": {
+            "type": "string",
+            "default": ""
+        },
+        "selectedOption": {
+            "type": "string",
+            "default": ""
+        }
+    }
+}
