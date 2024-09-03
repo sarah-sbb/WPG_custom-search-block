@@ -27,6 +27,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_wordpress_api_fetch__WEBPACK_IMPORTED_MODULE_6__);
 
 /**
+ * Fichier d'ajout de fonctionnalité côté tableau de bord de WP
  * Retrieves the translation of text.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/
@@ -263,6 +264,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_1__);
 
 /**
+ * Fichier qui permet de voir la vue de WordPress
  * React hook that is used to mark the block wrapper element.
  * It provides all the necessary props like the class name.
  *
@@ -299,7 +301,7 @@ function save({
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("label", {
     htmlFor: "edit-search",
     className: "visually-hidden"
-  }, "Search"), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("input", {
     placeholder: attributes.searchPlaceholder,
     type: "text",
     id: "edit-search",

@@ -1,4 +1,5 @@
 /**
+ * Fichier qui permet de voir la vue de WordPress
  * React hook that is used to mark the block wrapper element.
  * It provides all the necessary props like the class name.
  *
@@ -26,7 +27,7 @@ export default function save({ attributes }) {
             <div className="search_form">
                 <form className="mfcvl-config-store-locator-search-form" action="/search" method="get">
                     <div className="form-type-filter form-item form-type-textfield form-no-label">
-                        <label htmlFor="edit-search" className="visually-hidden">Search</label>
+                        <label htmlFor="edit-search" className="visually-hidden"></label>
                         <input
                             placeholder={attributes.searchPlaceholder}
                             type="text"

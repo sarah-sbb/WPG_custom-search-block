@@ -13,7 +13,6 @@
 	 height: 60px;
 	 width: 100%;
 	 border: none;
-	 padding-left: 20px;
 	 outline: none;
 	 box-sizing: border-box;
  }
@@ -51,6 +50,10 @@
 	 .form-text, .form-item, .form-select, .form-submit {
 		 @extend %input-styles;
 	 }
+
+	 .form-text, .form-item, .form-select {
+		padding-left: 20px;
+	} 
  
 	 .form-text::placeholder {
 		 color: #999;
@@ -76,5 +79,24 @@
 		 text-transform: uppercase;
 		 cursor: pointer;
 	 }
+ }
+
+ @media screen and (max-width: 768px) {
+	.wp-block-create-block-custom-search-block {
+		padding: 20px;
+	
+		.mfcvl-config-store-locator-search-form {
+			display: flex;
+			flex-direction: column;			
+		}
+
+		.form-item, .form-select, .form-submit {
+			padding: 0;
+		}
+
+		.button {
+			padding: 0 15px;
+		}
+	}
  }
  

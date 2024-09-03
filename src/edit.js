@@ -1,4 +1,5 @@
 /**
+ * Fichier d'ajout de fonctionnalité côté tableau de bord de WP
  * Retrieves the translation of text.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/packages/packages-i18n/

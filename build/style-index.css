@@ -12,7 +12,6 @@
   height: 60px;
   width: 100%;
   border: none;
-  padding-left: 20px;
   outline: none;
   box-sizing: border-box;
 }
@@ -48,6 +47,9 @@
 .wp-block-create-block-custom-search-block label {
   display: none;
 }
+.wp-block-create-block-custom-search-block .form-text, .wp-block-create-block-custom-search-block .form-item, .wp-block-create-block-custom-search-block .form-select {
+  padding-left: 20px;
+}
 .wp-block-create-block-custom-search-block .form-text::-moz-placeholder {
   color: #999;
   text-indent: 0; /* Pour que le placeholder soit aligné avec le texte */
@@ -65,6 +67,22 @@
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .wp-block-create-block-custom-search-block {
+    padding: 20px;
+  }
+  .wp-block-create-block-custom-search-block .mfcvl-config-store-locator-search-form {
+    display: flex;
+    flex-direction: column;
+  }
+  .wp-block-create-block-custom-search-block .form-item, .wp-block-create-block-custom-search-block .form-select, .wp-block-create-block-custom-search-block .form-submit {
+    padding: 0;
+  }
+  .wp-block-create-block-custom-search-block .button {
+    padding: 0 15px;
+  }
 }
 
 /*# sourceMappingURL=style-index.css.map*/
